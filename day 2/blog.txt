@@ -1,0 +1,86 @@
+"#blog"
+
+difference between document  and windows object
+
+document:
+        A document object represents a web page that is loaded in the browser.By accessing the document object,
+        we can acess the element in the HTML page.With the help of document objects, we can add dynamic content
+        to our web page. The document object can be accessed with a window.document or just document.
+Syntax:
+        document.property_name;
+
+Properties of document:
+some properties listed below:
+
+activeElement: It returns the currently active elements in the document.
+body: It returns the contents of the body element.
+anchors: It returns all <a> elements that have a name attribute.
+baseURI: It returns a string value that represents the base URI of the document.
+cookie: It returns the cookie of the current document.
+charSet: It returns a string, representing the document’s character encoding.
+defaultView: It returns the current Window Object.
+designMode: It is used to set documents as editable or read-only.
+domain: It returns the domain name of the document server.
+doctype: It returns the document’s doctype.
+embeds: It returns the collection of all embedded elements.
+images: It returns the collection of <img> elements in the document.
+scripts: It returns all script elements present in the document.
+strictErrorChecking: It sets or returns whether strict error checking can be enforced on a document or not.
+
+documrnt methods:
+syntax:
+
+document.method_name;
+some document methods listed below:
+
+addEventListener(): It is used to attach an event handler to the specified element.
+adoptNode(): It is used to adopt a node from another document and it returns a node object, representing the adopted node.
+close(): It is used to close the output stream.
+createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.
+createComment(): It is used to create a comment node with some text.
+createDocumentFragment(): It is used to create the document fragment to change the content of the document.
+renameNode(): It is used to rename the node.
+write(): It is used to write some content or javascript code in the document.
+writeln(): It is used to write a document with a newline character after each statement.
+
+
+
+Window Object:
+             The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that
+             displays the contents of the webpage. Whenever a window appears on the screen to display the contents of
+             the document, the window object is created. 
+
+Syntax:
+window.property_name;
+
+Properties of the window:
+
+some properties losted below:
+        
+ Closed: It holds a Boolean value that represents whether the window is closed or not.
+console: It returns a reference to the console object which provides access to the browser’s debugging console.
+defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+controllers: It returns the XUL controller objects for the current Chrome window.
+Status: It overrides the default status and places a message in the status bar.
+Top: It returns a reference to the topmost window containing a frame if many windows are opened.
+Toolbar: It will result in the toolbar object, whose visibility can be toggled in the window.
+Opener: It contains a reference to the window that opened the current window.
+Parent: It refers to the frameset in which the current frame is contained.
+Screen: It refers to the screen object
+Self: It provides another way to refer to the current window.
+
+window methods:              
+
+syntax:
+      window.method_name;
+
+some methods listed below:
+
+alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.
+atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.
+blur(): It is used to remove focus from the current window.
+btoa(): It is used for encoding a string in base-64 format.
+clearInterval(): It clears the interval which has been set by the setInterval() function before that.
+setInterval(): It repeats a given function at every given time interval.
+setTimeout(): It executes a function, after waiting a specified number of milliseconds.
+stop(): It is used to stop the window from loading resources in the current browsing context.
