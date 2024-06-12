@@ -1,0 +1,147 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background: rgb(216, 216, 242);
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    padding: 40px 0 0 550px;
+    box-sizing: border-box;
+}
+
+.sub-heading {
+    padding: 10px 0 0 500px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    height: 350px;
+    background: #cfd1c8;
+    margin: 70px 0 0 30px;
+    outline: 2px solid black;
+    display: flex;
+}
+
+.content {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 70%;
+    height: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content-container {
+    width: 65%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    width: 65%;
+    height: 30px;
+}
+
+.name {
+    padding: 20px 5px 20px 180px;
+    box-sizing: border-box;
+}
+
+.email {
+    padding: 0px 0 20px 180px;
+    box-sizing: border-box;
+}
+
+.number {
+    padding: 0px 40px 20px 140px;
+    box-sizing: border-box;
+}
+
+.seats {
+    padding: 0px 105px 20px 70px;
+    box-sizing: border-box;
+}
+
+.attendee {
+    padding: 0px 140px 20px 30px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .button1,
+.buttons .button2 {
+    width: 100px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.buttons .button1 {
+    background: green;
+}
+
+.buttons .button2 {
+    background: red;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+   
+    .heading {
+        padding: 40px 0 0 10px;
+    }
+
+    .sub-heading {
+        padding: 10px 0 0 10px;
+    }
+    input{
+       width: 100%;
+    }
+
+   
+   
+}
