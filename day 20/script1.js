@@ -1,22 +1,16 @@
+var bikeApi = "https://api.citybik.es/v2/networks";
 
-var bikeApi = "http://api.citybik.es/v2/networks";
-
-fetch(bikeApi) 
-  .then((response) => response.json()) 
+fetch(bikeApi)
+  .then((response) => response.json())
   .then((data) => {
-    
     console.log(data);
 
-   
     const cardContainer = document.getElementById("card-container");
 
-   
     data.networks.forEach((network) => {
-    
       const card = document.createElement("div");
-      card.classList.add("card"); 
+      card.classList.add("card");
 
-     
       const title = document.createElement("h2");
       title.textContent = network.name;
 
@@ -26,12 +20,10 @@ fetch(bikeApi)
       const company = document.createElement("p");
       company.textContent = `Company: ${network.company}`;
 
-      
       card.appendChild(title);
       card.appendChild(location);
       card.appendChild(company);
 
-     
       cardContainer.appendChild(card);
     });
   })
